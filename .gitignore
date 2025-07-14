@@ -1,0 +1,20 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+venv/
+
+# Environment Variables
+.env
+
+# VSCode settings (optional)
+.vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# App-generated Files
+voice_notes.txt
+*.log

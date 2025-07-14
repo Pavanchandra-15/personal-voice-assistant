@@ -1,0 +1,44 @@
+┌────────────────────┐
+│  Start Assistant   │
+└────────┬───────────┘
+         │
+         ▼
+┌────────────────────┐
+│  Listen to Command │ ◄─────────────┐
+└────────┬───────────┘               │
+         │                          (loop until exit)
+         ▼                           │
+┌────────────────────────────┐       |
+│ Convert Speech to Text     │_______|
+│  (SpeechRecognition)       │
+└────────┬───────────────────┘
+         │
+         ▼
+┌────────────────────────────┐
+│   Analyze the Command      │
+│ (Match keywords/actions)   │
+└────────┬───────────────────┘
+         │
+         ▼
+ ┌────────────────────────────────────────────────┐
+ │ Depending on command:                          │
+ │                                                │
+ │  • Open website (e.g., YouTube, Google)        │
+ │  • Launch app (e.g., Spotify)                  │
+ │  • Tell weather (API)                          │
+ │  • Send WhatsApp message (pywhatkit)           │
+ │  • Control volume/brightness                   │
+ │  • Take notes                                  │
+ │  • Tell date/time                              │
+ └────────┬───────────────────────────────────────┘
+          │
+          ▼
+┌────────────────────────────┐
+│  Respond via Text-to-Speech│
+│        (pyttsx3)           │
+└────────┬───────────────────┘
+         │
+         ▼
+┌──────────────────────┐
+│   Wait for Next Cmd  │
+└──────────────────────┘
