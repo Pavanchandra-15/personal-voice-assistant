@@ -21,7 +21,6 @@ A Python-based voice assistant that responds to voice commands, performs system-
 
 ## Screenshots
 
-> _Add screenshots or flowcharts in the `assets/` folder and link them here._
 
 | Note saved | Note WhatsApp Message Sent | Weather Fetch |
 |---------------------------|------------------------|----------------|

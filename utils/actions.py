@@ -64,7 +64,7 @@ def handle_command(command, speak):
         city = listen()
         if city:
             try:
-                api_key = "45a7562604d0960a7932dcbdf4868762"  # replace with your key
+                api_key = ""  # replace with your key
                 url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
                 response = requests.get(url)
                 data = response.json()
